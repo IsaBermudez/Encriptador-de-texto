@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Encriptador de texto</h1>
+    </header>
+    <main class="presentacion">
+        <!--primera seccion de la pagina-->
+        <section class="presentacion_izq">
+            <!--area de texto de 30 columnas y 10 lineas
+            el placeholder es el texto que aparece dentro de la caja de texto-->
+            <textarea class="input" id="input_texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <!--caja de informacion-->
+            <div class="informacion">
+                <h5><img class="icono"  src="/images/Group (1).png">Solo letras minúsculas y sin acentos</h5>
+            </div>
+            <!--caja de botones-->
+            <div class="botones">
+                <button class="encriptar" onclick="verificarMensaje()">Encriptar</button>
+                <button class="desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+         <!--segunda seccion de la pagina-->
+        <section>
+            <textarea class="contenido_mensaje" cols="20" rows="10">Ningún mensaje fue encontrado</textarea>
+            <div>
+                <button class="copiar" onclick="botonCopiar()">copiar</button>
+            </div>
+        </section>    
+    </main>
+    <footer class="pie_pagina">Desarrollado por Isabella Bermúdez
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
